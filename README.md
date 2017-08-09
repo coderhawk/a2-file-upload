@@ -1,6 +1,6 @@
 # KendoAngular2UploadSampleApp
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.22-1.
+This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.2.7.
 
 ## Run npm start to run the Express server. The A2 app is served as static content from the /dist folder. Prefix all API requests with /api/.
 
