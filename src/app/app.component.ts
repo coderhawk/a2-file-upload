@@ -9,9 +9,9 @@ import { FormUploadService } from './services/';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  uploadSaveUrl: string = '/api/file';
-  uploadRemoveUrl: string = '/api/remove';
-  formEndpoint: string = '/api/form';
+  uploadSaveUrl: string = 'http://localhost:3000/api/file';
+  uploadRemoveUrl: string = 'http://localhost:3000/api/remove';
+  formEndpoint: string = 'http://localhost:3000/api/form';
   uploadedImageUrl: string;
   uploadedImageUid: string;
   uploadedBy: string;

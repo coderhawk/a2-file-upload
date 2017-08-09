@@ -30,6 +30,12 @@ const express = require('express'),
 // });
 
 app.use(express.static(path.join(__dirname, 'dist')));
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "http://localhost:4200");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use(function (req, res, next) {
   let accept = req.accepts('html', 'json', 'xml'),

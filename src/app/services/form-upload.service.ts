@@ -27,7 +27,7 @@ export class FormUploadService {
       }
     }
 
-    return this.http.post('/api/file', formData, {
+    return this.http.post('http://localhost:3000/api/file', formData, {
       headers: headers
     }).map(resp => resp.json());
   }
@@ -36,7 +36,7 @@ export class FormUploadService {
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
 
-    return this.http.post('/api/form', JSON.stringify(postData), {
+    return this.http.post('http://localhost:3000/api/form', JSON.stringify(postData), {
       headers: headers
     }).map(resp => resp.json());
   }
